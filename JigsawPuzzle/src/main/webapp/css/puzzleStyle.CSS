@@ -1,0 +1,57 @@
+#buttons {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 5%;
+  background-color: #124559;
+  text-align: center;
+}
+#mydiv {
+  position: absolute;
+   left: 0px;
+  right: 0px;
+  bottom: 5%;
+  height: 95%;
+  background-color:#7A7A7A;
+  text-align: center;
+  z-index: 0;
+}
+::selection {
+    color: none;
+    background: none;
+}
+
+#ghostImage {
+	pointer-events: none;
+	opacity: 0.5;
+	z-index: 1;
+	draggable: false;
+}
+
+#gallery {
+	background-color: #7A7A7A;
+}
+
+#settings {
+	position: absolute;
+	top: 5%;
+	left: 25%;
+	height: 40%;
+	width: 50%;
+	background-color: #124559;
+	outline-style: solid;
+	outline-color: white;
+	z-index: 2;
+	draggable: false;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+README FILE
+
+All of the files in my project are as follows:
+	Java classes:
+		-	Startup.java
+		-	WebConfig.java
+		-	IndexController.java
+		-	PuzzleController.java
+		-	DatabaseController.java
+	HTML views (.jsp):
+		-	modePick.jsp
+		-	challengeSelect.jsp
+		-	finish.jsp
+		-	imageSelect.jsp
+		-	puzzle.jsp
+	CSS files:
+		-	modeStyle.CSS
+		-	puzzleStyle.CSS
+	JavaScript files:
+		-	javascript.js
+	image files:
+		-	butterflies.jpg
+		-	example.jpg
+		-	flag.jpg
+		-	jigsawtemplate.jpg
+		-	leaves.jpg
+		-	plane.jpg
+		-	sheffield.jpg		
+		
+Running my Software:
+1)	To run my software you need to import my project into an IDE like STS then add the "mysql-connector-java-8.0.19.jar" to the build path.
+2)	Create a mysql database using mysql workbench.
+3)	Create a connection through "src/main/java/DatabasePackage/DatabaseController.java" line 18.
+	connection = DriverManager.getConnection("jdbc:mysql://localhost: port /schema ?serverTimezone=UTC", "username", "password");
+	- using your own values for port, schema, username and password
+
+4)	Now execute the script to create tables in the database. "TableCreation.sql". 
+5)	Then run the java class Startup.java within src/main/java/JigsawPuzzle must be ran as a Spring Boot application.
+6)	Then, as it is a web application you must go to "localhost:port" on any web browser to load the first page.
+7)	If you cannot connect to the database check the values within line 18.
+
+Side Note:	I have attempted to create an executable file, it is in build/libs but it does not have the .jar mentioned above as part of it so cannot connect to my database and has multiple warnings that stop it from loading any page.
